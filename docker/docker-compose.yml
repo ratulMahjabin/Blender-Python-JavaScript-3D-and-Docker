@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ../blender/models:/app/static/models
+      - ../threejs/scripts:/app/scripts
